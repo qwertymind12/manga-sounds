@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Содержимое в теле */
+
+.content {
+    padding: 12px;
+    width: 750px;
+}
+
+h1 {
+    color: #2f4f4f;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+a {
+    color: #f9a34e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+b.link {
+    color: #f9a34e;
+}
+
+p, td {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 10pt;
+}
+
+#searchbar {
+    padding: 4px 8px;
+    width: 320px;
+}
+
+#searchbtn {
+    background-color: #f9ae64;
+    border-color: #ca6401;
+    padding: 4px 8px;
+}
+
+#searchres {
+    margin-top: 12px;
+    padding-left: 10px;
+}
+
+
+/* Список звуков */
+
+.snd-list {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 10pt;
+}
+
+.snd-list .title {
+    color: orangered;
+    font-size: 10.5pt;
+}
+
+.snd-list .rough,
+.snd-list .exact,
+.snd-list .empty {
+    font-style: italic;
+}
+
+.snd-list .elem:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+
+/* Правое меню */
+
+.right-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.snd-picker {
+    background-color: #fff8dc;
+    width: 300px;
+}
+
+.snd-picker:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.snd-picker .heading {
+    background: linear-gradient(#ffe8bc, #fdd9a6);
+    padding: 5px 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.snd-picker tr td {
+    padding: 5px;
+}
+
+.snd-picker tr td a {
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.katakana tr td a {
+    color: #3939c5;
+}
+
+.hiragana tr td a {
+    color: #ce3030;
+}
