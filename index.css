@@ -34,6 +34,10 @@ p, td {
     font-size: 10pt;
 }
 
+.search {
+    display: flex;
+}
+
 #searchbar {
     padding: 4px 8px;
     width: 320px;
@@ -42,6 +46,7 @@ p, td {
 #searchbtn {
     background-color: #f9ae64;
     border-color: #ca6401;
+    margin-left: 4px;
     padding: 4px 8px;
 }
 
