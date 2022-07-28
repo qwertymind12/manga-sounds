@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
@@ -30,7 +30,7 @@ b.link {
 }
 
 p, td {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 10pt;
 }
 
@@ -54,7 +54,7 @@ p, td {
 /* Список звуков */
 
 .snd-list {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 10pt;
 }
 
@@ -104,8 +104,6 @@ p, td {
 
 .snd-picker tr td a {
     font-size: 12pt;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .katakana tr td a {

@@ -12,7 +12,7 @@ function snd_search() {
     let matchedIndexes = {};
     let matchingProps = ['snd_ru', 'snd_en', 'snd_hiragana', 'snd_katakana'];
 
-    SOUNDS.forEach(function (sound, index) {
+    SOUNDS_DB.forEach(function (sound, index) {
         let isMatched = matchingProps.some(function (key) {
             return sound[key] && sound[key].toLowerCase().includes(inputValue);
         });
@@ -36,14 +36,14 @@ function snd_search() {
         let elementContainer = document.createElement('div');
         elementContainer.className += 'elem';
 
-        let sound = SOUNDS[matchedIndexes[matchedKey][0]];
+        let sound = SOUNDS_DB[matchedIndexes[matchedKey][0]];
 
         let primaryTitle = sound.snd_ru;
         let secondaryTitle = [sound.snd_en, sound.snd_hiragana, sound.snd_katakana].filter(Boolean).join(', ');
         elementContainer.innerHTML += '<div class="title"><b>' + primaryTitle + '</b> (' + secondaryTitle + ')';
 
         matchedIndexes[matchedKey].forEach(function (sndIndex, cntIndex) {
-            sound = SOUNDS[sndIndex];
+            sound = SOUNDS_DB[sndIndex];
 
             let prefix = matchedIndexes[matchedKey].length > 1 ? '' + (cntIndex + 1) + '. ' : '';
             ['trans_ru', 'rough', 'exact'].forEach(function (sndKey) {
